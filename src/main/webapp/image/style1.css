@@ -1,0 +1,15 @@
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#fondo1{
+    width: 850px;
+    height: 350px;
+    background-image: url("animales-en-ingles-blog.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+
+}

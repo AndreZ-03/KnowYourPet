@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:f="http://java.sun.com/jsf/core">
+
+
+<head>
+    <title>Prueba</title>
+
+    <link rel="stylesheet" href="image/style.css"/>
+</head>
+
+<body>
+<h1 style=" color: chocolate ; background: gold" align="center">Acceso de Veterinario </h1>
+    <div class="flex-center">
+        <div id="fondo" class="flex-center">
+
+        </div>
+    </div>
+</body>
+
+<p:growl id="growl" showSummary="true" showDetail="true" keepAlive="true" life="3000">
+    <p:autoUpdate/>
+</p:growl>
+
+<div class="card">
+    <h:form>
+        <h1 style="font-max-size: infinity; color: aliceblue;background: goldenrod;border-color: gold">Observaciones</h1>
+        <p:inputTextarea rows="6" cols="33"/>
+
+
+    </h:form>
+    <p:button value="Volver" outcome="index" styleClass="rounded-button" style="font-size: x-large;color: aliceblue; background: black"/>
+</div>
+
+
+
+
+
+
+</html>

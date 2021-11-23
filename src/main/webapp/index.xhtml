@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets" >
+
+
+<h:head >
+
+    <title>Plataforma Acceso</title>
+
+    <link rel="stylesheet" href="image/style.css"/>
+    <link rel="stylesheet" href="image/style1.css"/>
+
+</h:head>
+
+<h1 style="color: goldenrod" align="center"   >KnowYourPet </h1>
+
+
+<h:body style="margin-left:50px">
+    <div class="menubar" style="color: chocolate">
+        <h:form style="color: chocolate">
+            <p:growl id="messages"/>
+
+            <p:menubar style="background: wheat">
+                <p:submenu label="Contacto" icon="pi pi-fw pi-file" style="background: wheat" >
+                    <p:submenu label="Redes sociales" icon="pi pi-fw pi-plus">
+                        <p:menuitem value="Instagram" icon="pi pi-fw pi-bookmark"/>
+                        <p:menuitem value="Fcebook" icon="pi pi-fw pi-video"/>
+                    </p:submenu>
+                    <p:menuitem value="Quienes Somos" icon="pi pi-fw pi-trash"/>
+
+                    <p:menuitem value="Asigna tu cita" icon="pi pi-fw pi-external-link"/>
+                </p:submenu>
+
+                <p:submenu label="Nuestra Empresa" icon="pi pi-fw pi-pencil">
+                    <p:menuitem value="Mision" icon="pi pi-fw pi-align-left"/>
+                    <p:menuitem value="Vision" icon="pi pi-fw pi-align-right"/>
+                    <p:menuitem value="Galeria" icon="pi pi-fw pi-align-center"/>
+
+                </p:submenu>
+
+                <p:submenu label="Tu Mascota" icon="pi pi-fw pi-user">
+                    <p:menuitem value="Infomracion de Enfermedades" icon="pi pi-fw pi-user-plus"/>
+                    <p:menuitem value="Cuidados mas Comunes" icon="pi pi-fw pi-user-minus"/>
+                    <p:submenu label="Como tratar" icon="pi pi-fw pi-users">
+                        <p:menuitem label="Perros" icon="pi pi-fw pi-filter"/>
+
+                        <p:menuitem value="Gatos" icon="pi pi-fw pi-bars"/>
+                    </p:submenu>
+                </p:submenu>
+
+                <p:submenu label="Productos" icon="pi pi-fw pi-calendar">
+                    <p:submenu label="Aseo" icon="pi pi-fw pi-pencil">
+                        <p:menuitem value="Jabones" icon="pi pi-fw pi-calendar-plus"/>
+                        <p:menuitem value="Cepillos" icon="pi pi-fw pi-calendar-minus"/>
+                    </p:submenu>
+                    <p:submenu label="Medicos" icon="pi pi-fw pi-calendar-times">
+                        <p:menuitem value="Pastas" icon="pi pi-fw pi-calendar-minus"/>
+                    </p:submenu>
+                </p:submenu>
+
+                <f:facet name="options">
+                    <div class="ui-input-icon-left p-mr-2">
+                        <i class="pi pi-fw pi-search" />
+                        <p:inputText placeholder="Search"/>
+                    </div>
+                    <p:button  style="background: #ffc35a" value="Inicia Sesion" outcome="validacion" icon="pi pi-fw pi-sign-out" styleClass="ui-button-info"/>
+                </f:facet>
+            </p:menubar>
+        </h:form>
+    </div>
+
+    <div class="flex-center">
+        <div id="fondo" class="flex-center">
+        </div>
+    </div>
+
+    <h:form id="form">
+    <p:growl id="msgs" showDetail="true" skipDetailIfEqualsSummary="true"/>
+
+    <div class="card">
+        <h1 style="color: chocolate" align="center"   >Conoce Nuestra Historia </h1>
+        <p:accordionPanel style="backgroundcolor: black">
+            <p:tab title="Mision" titleStyle="background: darkgoldenrod;color: wheat">
+                <p class="p-m-0">
+
+                    Buscamos la creacion de nuevos proyectos en ayuda con nuestras mascotas
+
+                </p>
+            </p:tab>
+            <p:tab title="Vision" titleStyle="background: darkgoldenrod;color: wheat">
+                <p class="p-m-0" style="background: goldenrod">
+                    Nuevos sueños y metas a corto plazo
+
+                </p>
+            </p:tab>
+            <p:tab title="Apoyanos" titleStyle="background: darkgoldenrod;color: wheat">
+                <p class="p-m-0" style="background: goldenrod">
+                    La creacion de nuevas ideas nace en nosotros
+
+                </p>
+            </p:tab>
+        </p:accordionPanel>
+    </div>
+    </h:form>
+
+    <p:separator/>
+
+    <div class="flex-center">
+        <div id="fondo1" class="flex-center">
+        </div>
+    </div>
+
+    <h1 style="color: chocolate">Que es una mascota</h1>
+
+    <p style="color: aliceblue; background: goldenrod; font-size: x-large;font-family: 'Adobe Devanagari'; align-content: normal; " >
+        Recientes estudios han demostrado que tener una mascota en casa permite contrarrestar el stress, disminuye nuestra presión arterial cada vez que las acariciamos, incrementar el autoestima al ponerte en el papel de su “líder” y son una excelente fuente de lecciones de  responsabilidad y sensibilidad a los niños, entre otros muchos beneficios.
+
+        Algunas de las mascotas preferidas para tener en casa son en primer lugar los perros, luego vienen los gatos, los peces, los canarios o periquitos, los conejos, los hamsters y hasta los hurones y erizos pigmeos, esto por ser animales que requieren cuidados básicos y ofrecen compañía, disminuyendo el mal humor y en determinados casos incentivando a sus dueños a realizar actividades físicas al jugar y salir de paseo con ellos.
+
+
+    </p>
+
+    <p:commandButton value="Validar Conex" icon="pi pi-check" actionListener="#{indexBean.conectarse()}" styleClass="rounded-btn"/>
+
+
+</h:body>
+</html>

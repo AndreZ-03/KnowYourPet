@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:f="http://java.sun.com/jsf/core">
+
+
+<h:head>
+        <title>Crear Usuario</title>
+    <link rel="stylesheet" href="image/style.css"/>
+</h:head>
+
+<h:body>
+
+    <h:form>
+
+        <p:fieldset legend="Datos " style="background: goldenrod;color: black">
+            <h:panelGrid columns="2">
+                <p:outputLabel value="Nombre: "/>
+                <p:inputText/>
+                <p:outputLabel value="Apellidos: "/>
+                <p:inputText/>
+
+
+                <p:outputLabel value="Sexo:"/>
+                <p:selectOneRadio>
+                    <f:selectItem itemValue="M" itemLabel="Masculino" />
+                    <f:selectItem itemValue="F" itemLabel="Femenino" />
+                </p:selectOneRadio>
+                <p:outputLabel value="Fecha Nacimiento "/>
+                <p:calendar />
+
+                <p:outputLabel value="Telefono"/>
+                <p:inputNumber/>
+
+                <p:outputLabel value="Edad"/>
+                <p:inputNumber/>
+                <p:outputLabel value="Direccion"/>
+                <p:inputText/>
+                <p:outputLabel value="Correo"/>
+                <p:inputText/>
+
+
+            </h:panelGrid>
+        </p:fieldset>
+
+        <p:fieldset legend="Cuenta" style="background: goldenrod;color: black">
+            <h:panelGrid columns="2">
+                <p:outputLabel value="Usuario" />
+                <p:inputText/>
+
+                <p:outputLabel value="Clave" />
+                <p:password id="turkishFeedback" value="#{passwordView.password3}" feedback="true"
+                            promptLabel="Ingresa tu contraseña" weakLabel="Débil"
+                            goodLabel="Buena" strongLabel="Fuerte"/>
+                <p:outputLabel value="Repetir Clave" />
+                <p:password/>
+
+
+
+
+
+                <p:button value="Volver" outcome="index" styleClass="rounded-button" style="background: wheat;color: black"/>
+
+                <p:commandButton icon="ui-icon-check    " value="Registrar" style="background: wheat;color: black"/>
+
+
+
+            </h:panelGrid>
+        </p:fieldset>
+    </h:form>
+
+
+
+</h:body>
+
+
+
+</html>
